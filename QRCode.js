@@ -25,21 +25,33 @@ function Reader(QR) {
     column = 20
     counter = 2
     string = ''
+    pos = 0
 
-    
-    while (column >= 0) {
-        while (row >= 0) {
-            if (counter != 0) {
-                string = string + QR[row][column]
-                column = column - 1
-                counter = counter - 1
-            }
-            else if (counter == 0 && )
-            else if (counter == 0) {
-                row = row -1
-                column = 20
-                counter = 2
-            }
+    while (pos <= 20) {
+        currentCol = column - pos
+        if (counter != 0 && row != 0) {
+            //console.log('a')
+            string = string + QR[row][currentCol]
+            console.log(QR[row][currentCol], row, currentCol)
+            pos = pos + 1
+            counter = counter - 1
+        }
+        else if (counter == 0 && row != 0) {
+            //console.log('b')
+            row = row -1
+            //console.log(row)
+            pos = pos - 2
+            counter = 2
+        }
+        else if (counter != 0 && row == 0) {
+            //console.log('c')
+            string = string + QR[row][currentCol]
+            string = string + QR[row][currentCol - 1]
+            row = 20
+            pos = pos + 2
+            counter = 2
+            //console.log(pos, currentCol)
+        }
     }
     console.log(string.length)
 }
