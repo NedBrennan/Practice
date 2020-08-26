@@ -3,7 +3,6 @@ function Adder(rows) {
     counter = 1
     sum = 0
     rowComp = rows - 1
-
     for (i = 1; i <= rowComp; i++) {
         newArray = []
         for (j = 0; j <= baseArray.length - 1; j++) {
@@ -19,7 +18,6 @@ function Adder(rows) {
         baseArray = newArray
         newArray = []
     }
-
     for (i = 0; i < baseArray.length; i ++) {
         sum = sum + baseArray[i]
     }
