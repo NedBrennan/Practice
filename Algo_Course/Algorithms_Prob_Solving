@@ -1,0 +1,69 @@
+What is an algorithm
+	A process or set of steps to accomplish a certain task
+		Instagram's Algorithm
+		Ad based Algos
+		Mathematical functions
+	We focus on interview questions
+
+	How do you improve?
+		Divise a plan for solving problems
+		Master common patterns
+
+Problem Solving
+
+	Understand the problem
+	Explore the concrete examples
+	break it down
+	solve simply
+	Refactor
+	
+Understand the problem
+	
+	George Polya - How to Solve It
+	1. can you restate the problem in your own words?
+	2. What are the inputs thsat go into the problem
+	3. What are the outputs what will be returned
+	4. Do you have enough information
+	5. How to label the data
+
+	Write a function which takes two numbers and returns their sum
+
+Explore concrete examples
+	
+	Coming up with concrete examples help you test your solution
+	User stories - Unit tests
+
+	1. Start with simple examples
+	2. Progress with more complex inputs
+	3. No input
+	4. Invalid input
+
+Break It Down
+		
+	Explicitly write down steps
+		helps catch parts you dont understand
+	Writing comments to make notes is important
+
+Solve & Simplify
+	
+	Ignore what is giving you trouble
+		progress to the rest of the problem
+		you will gain insight into the more difficult
+		part of the problem
+
+Look Back and Refactor
+	
+	ITS NOT OVER
+	Try to improve your code
+		How does it read?	
+		How efficient is it?
+
+	Checklist
+		Can you check the results?
+		Can you derive the result differemtly
+		Can yo use this solution for something else?
+		Can you improve the performance of a solution
+			Time/Space complexity
+		Does the code follow style guide
+		How have others solved this problem
+

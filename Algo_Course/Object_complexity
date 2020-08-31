@@ -1,0 +1,20 @@
+Interactions with objects have a complexity
+
+Objects are quick for most things
+	they do not have an order
+	object methods all have O(n)
+
+Arrays have more nuance
+	Arrays have an order
+		comes in handy in some cases
+		only good if we need order
+	Free ordered structure
+	constant time when you know the index
+		direct shortcut to every index item
+
+	INSERTION
+		Adding to the end is O(1)
+		Inserting at the beginning O(n)
+			must re-index each item
+			same goes for removing
+		

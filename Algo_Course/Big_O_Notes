@@ -1,0 +1,32 @@
+Big O Notation
+
+Most signifigant part of algorithms
+
+An understanding of this will establish a framework for the rest of the course
+
+What is Big O
+	Best way to do something based on tim complexity
+	System for classifying code
+	This is the Richter scale of code
+
+	Useful for discussing tradeoffs
+	Helps to understand why code is buggy/slow
+	Comes up in interviews a lot
+
+What does better mean in the context of code
+	Speed and Memory are typical
+			
+Evaluating Speed
+	
+Big f(n) - a function with an input of n
+		result is equal to a value relative to n
+
+	O(n) a function that grows in a linear manner
+	
+Space Complexity - How much memory does the function take up
+
+	Constant variables
+	Items in array take up some memory
+	
+Big O does not care about precision
+	general trends are the naem of the game
