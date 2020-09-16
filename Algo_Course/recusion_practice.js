@@ -46,3 +46,10 @@ function reverse(s) {
     return s[s.length - 1] + reverse(s.slice(0, s.length - 1))
 }
 
+function isPalindrome(s) {
+    if(s.length > 0) {
+        if(s[0] === s[s.length - 1] && isPalindrome(s.slice(1, s.length - 1))) return true
+        else return false
+    } else return true
+}
+

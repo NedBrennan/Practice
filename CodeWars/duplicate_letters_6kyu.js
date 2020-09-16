@@ -1,4 +1,4 @@
-function dup(s) {
+/* function dup(s) {
 
     currS = 0
     newS = []
@@ -20,5 +20,33 @@ function dup(s) {
     
 
   };
+  */
 
-  dup(["ccooddddddewwwaaaaarrrrsssss","piccaninny","hubbubbubboo"])
+function dup(s) {
+
+    newarray = s
+
+    function dups(str) {
+    newstr = ''
+    pointer = 0
+    for(i = 0; i < str.length; i ++) {
+        if(i === 0) newstr += str[i]
+        else if(str[i] === newstr[pointer]) {}
+        else {
+            newstr += str[i]
+            pointer += 1
+        }
+    }
+    return newstr
+    }
+
+    for(j = 0; j < s.length; j ++) {
+        newarray[j] = dups(newarray[j])
+    }
+
+    return newarray
+}
+
+function strnum(str) {
+    return str[1]
+}
