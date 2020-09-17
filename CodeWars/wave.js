@@ -1,6 +1,12 @@
 function wave(str){
-    newStr = str
-    for (i = 0; i < str.length; i ++) {
-        for (k = 0; k < str.length; k ++) {
-            
+    arr = str.split('')
+    waveArray = []
+    for(i = 0; i < arr.length; i ++) {
+        if(arr[i] !== ' ') {
+            arr[i] = arr[i].toUpperCase()
+            waveArray.push(arr.join(''))
+            arr[i] = arr[i].toLowerCase()
         }
+    }
+    return waveArray
+  }
